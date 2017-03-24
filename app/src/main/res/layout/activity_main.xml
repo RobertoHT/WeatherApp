@@ -10,28 +10,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="micromaster.galileo.edu.weatherapp.MainActivity">
 
-
-    <TextView
-        android:id="@+id/pressure"
-        style="@style/TempValue"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignStart="@+id/textView4"
-        android:layout_below="@+id/textView4"
-        android:layout_marginTop="21dp"
-        tools:text="TextView" />
-
-    <TextView
-        android:id="@+id/textView4"
-        style="@style/Header"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/temperature"
-        android:layout_marginEnd="22dp"
-        android:layout_marginTop="47dp"
-        android:layout_toStartOf="@+id/temperature"
-        android:text="@string/pressure" />
-
     <TextView
         android:id="@+id/countryName"
         style="@style/Header"
@@ -41,6 +19,17 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="20sp"/>
+
+    <TextView
+        tools:text="TextView"
+        style="@style/Header"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:id="@+id/weather"
+        android:layout_below="@+id/countryName"
+        android:layout_centerHorizontal="true"/>
 
     <TextView
         android:id="@+id/temperature"
@@ -53,6 +42,27 @@
         android:gravity="center"
         android:layout_below="@+id/weather"
         android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView4"
+        style="@style/Header"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/temperature"
+        android:layout_marginEnd="5dp"
+        android:layout_marginTop="47dp"
+        android:layout_toStartOf="@+id/temperature"
+        android:text="@string/pressure" />
+
+    <TextView
+        android:id="@+id/pressure"
+        style="@style/TempValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/textView4"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="21dp"
+        tools:text="TextView" />
 
     <TextView
         android:text="@string/humidity"
@@ -72,16 +82,5 @@
         android:layout_alignBaseline="@+id/pressure"
         android:layout_alignBottom="@+id/pressure"
         android:layout_alignStart="@+id/textView2" />
-
-    <TextView
-        tools:text="TextView"
-        style="@style/Header"
-        android:gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:id="@+id/weather"
-        android:layout_below="@+id/countryName"
-        android:layout_alignEnd="@+id/temperature" />
 
 </RelativeLayout>
