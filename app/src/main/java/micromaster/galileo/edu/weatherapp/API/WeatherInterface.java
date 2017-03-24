@@ -21,8 +21,8 @@ public interface WeatherInterface {
     );*/
 
 
-    @GET("{api_key}/conditions/q/CA/San_Francisco.json")
-    Call<WeatherResponse> getWeatherFromSanFrancisco(
+    @GET("{api_key}/conditions/q/Mexico/Mexico_City.json")
+    Call<WeatherResponse> getWeatherFromMexicoCity(
             @Path("api_key") String apiKey
     );
 

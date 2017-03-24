@@ -71,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
                     .build();
 
             WeatherInterface weatherInterface = retrofit.create(WeatherInterface.class);
-            Call<WeatherResponse> call = weatherInterface.getWeatherFromSanFrancisco(API_KEY);
+            Call<WeatherResponse> call = weatherInterface.getWeatherFromMexicoCity(API_KEY);
             WeatherResponse weatherResponse = null;
             try {
                 weatherResponse = call.execute().body();
